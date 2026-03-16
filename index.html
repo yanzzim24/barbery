@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARYELCORTS - Barbearia</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+<nav class="nav">
+<h1 class="logo">ARYELCORTS</h1>
+<a href="#booking" class="btn">Agendar Horário</a>
+</nav>
+
+<div class="hero-content">
+<h2>Agende agora sua beleza</h2>
+<p>Estilo moderno, atendimento profissional.</p>
+<a href="#booking" class="btn big">Agendar Agora</a>
+</div>
+</header>
+
+<section class="services">
+<h2>Serviços</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Corte Masculino</h3>
+<p>R$30</p>
+</div>
+
+<div class="card">
+<h3>Barba</h3>
+<p>R$20</p>
+</div>
+
+<div class="card">
+<h3>Corte + Barba</h3>
+<p>R$45</p>
+</div>
+
+<div class="card">
+<h3>Degradê</h3>
+<p>R$35</p>
+</div>
+
+<div class="card">
+<h3>Sobrancelha</h3>
+<p>R$10</p>
+</div>
+
+</div>
+</section>
+
+
+<section id="booking" class="booking">
+
+<h2>Agendamento</h2>
+
+<form id="bookingForm" onsubmit="agendar(); return false;">
+
+<input id="nome" placeholder="Seu nome" required>
+
+<input id="telefone" placeholder="Telefone" required>
+
+<select id="servico" required>
+<option value="">Escolha o serviço</option>
+<option>Corte Masculino</option>
+<option>Barba</option>
+<option>Corte + Barba</option>
+<option>Degradê</option>
+<option>Sobrancelha</option>
+</select>
+
+<select id="barbeiro" required>
+<option value="">Escolha o barbeiro</option>
+<option>João</option>
+</select>
+
+<input type="date" id="data" required>
+
+<select id="horario" required>
+<option value="">Escolha o horário</option>
+<option>09:00</option>
+<option>10:00</option>
+<option>11:00</option>
+<option>13:00</option>
+<option>14:00</option>
+<option>15:00</option>
+<option>16:00</option>
+<option>17:00</option>
+</select>
+
+<button class="btn">Reservar</button>
+
+</form>
+
+</section>
+
+
+<section class="payment" id="payment">
+
+<h2>Pagamento antecipado</h2>
+
+<p>Para garantir seu horário faça um adiantamento de <b>R$10</b></p>
+
+<button class="btn" onclick="pagarPix()">Pagar com PIX</button>
+
+<button class="btn" onclick="pagarCartao()">Pagar com Cartão</button>
+
+<p id="paymentStatus"></p>
+
+</section>
+
+
+<section class="contact">
+
+<h2>Contato</h2>
+
+<p>WhatsApp: (11) 99999-9999</p>
+
+</section>
+
+
+<footer>
+
+<p>Horário: 09:00 - 20:00</p>
+
+<p>© ARYELCORTS</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
